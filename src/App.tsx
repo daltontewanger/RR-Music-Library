@@ -1,7 +1,7 @@
 import './App.css';
 import { useEffect, useState } from 'react'
-import Gallery from './components/Gallery'
-import SearchBar from './components/SearchBar'
+import Gallery from './components/Gallery.tsx'
+import SearchBar from './components/SearchBar.tsx'
 
 function App() {
   let [searchTerm, setSearchTerm] = useState('')
@@ -24,7 +24,7 @@ function App() {
   }
   }, [searchTerm])
 
-  const handleSearch = (e, term) => {
+  const handleSearch = (e: any, term: any) => {
     e.preventDefault()
     setSearchTerm(term)
   }

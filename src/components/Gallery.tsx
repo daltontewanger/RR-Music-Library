@@ -1,4 +1,4 @@
-import GalleryItem from './GalleryItem'
+import GalleryItem from './GalleryItem.tsx'
 
 function Gallery(props){
 
